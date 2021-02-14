@@ -1,0 +1,17 @@
+{
+    "name": "test-sapiens",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "server": "cd server && node ./dist/index.js",
+        "dev-server": "cd server && nodemon ./src/index.ts",
+        "build-server": "cd server && tsc -p .",
+        "dev-client": "cd client && yarn react-scripts start",
+        "build-client": "cd client && react-scripts build",
+        "dev": " yarn dev-server & yarn dev-client",
+        "build": "yarn build-server & yarn build-client"
+    },
+    "repository": "git@github.com:nikitabobers/test-sapiens.git",
+    "author": "nikita <nikita.bobers@gmail.com>",
+    "license": "MIT"
+}
